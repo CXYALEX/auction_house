@@ -1,3 +1,5 @@
+build/
+
 # Compiler files
 cache/
 out/
