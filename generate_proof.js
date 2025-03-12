@@ -103,7 +103,7 @@ async function main() {
     console.error(error);
     
     // 提供更详细的错误诊断信息
-    if (error.message && error.message.includes("out of bounds")) {
+    if (error.message && error.message.includes("out of bounds")) {   
       console.log("\n[可能的问题] 输入值超出电路约束范围。确保所有值在有限域内。");
     } else if (error.message && error.message.includes("cannot find module")) {
       console.log("\n[可能的问题] 找不到必要的文件。请确保已正确编译电路并生成WASM和zkey文件。");
